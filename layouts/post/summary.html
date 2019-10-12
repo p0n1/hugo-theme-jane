@@ -43,7 +43,7 @@
   <div class="post-content">
 
     <p>
-        {{ if .Params.featuredImage }}<img src="{{.Params.featuredImage}}"><br>{{ end }}
+        {{ if .Params.featuredImage }}<img src="{{ .RelPermalink }}{{ .Params.featuredImage }}"><br>{{ end }}
     </p>
 
     {{ if .Site.Params.homeFullContent }}
