@@ -41,6 +41,11 @@
   </header>
   <!-- Content -->
   <div class="post-content">
+
+    <p>
+        {{ if .Params.featuredImage }}<img src="{{.Params.featuredImage}}"><br>{{ end }}
+    </p>
+
     {{ if .Site.Params.homeFullContent }}
     <div class="post-summary">
       {{ .Content }}
