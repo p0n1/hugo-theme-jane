@@ -50,6 +50,11 @@
   </header>
   <!-- Content -->
   <div class="post-content">
+
+    <p>
+      {{ if .Params.featuredImage }}<img src="{{ .RelPermalink }}{{ .Params.featuredImage }}"><br>{{ end }}
+    </p>
+
     {{ if .Site.Params.homeFullContent }}
     <div class="post-summary">
       {{ .Content }}
