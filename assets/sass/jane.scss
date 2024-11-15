@@ -5,6 +5,8 @@
 
 $jane-theme-color: 'azure' !default;
 $article-max-width: 40em !default;
+$desktop-header-height: 80px !default;
+$mobile-header-height: 60px !default;
 $logo-font-family: 'Comic Sans MS', -apple-system, 'Open Sans', 'Segoe UI', 'Helvetica', Arial, sans-serif !default;
 $title-font-family: -apple-system, 'Open Sans', 'Segoe UI', 'Helvetica', Arial, sans-serif !default;
 $global-font-family: -apple-system,'Open Sans', 'Segoe UI', 'Helvetica', Arial, sans-serif !default;
@@ -185,10 +187,10 @@ $mobile-breakpoint: 768px !default;
 @import "_partial/footer";
 @import "_partial/post";
 @import "_partial/_widget/index";
+@import "_partial/404";
 // @import "_partial/tags";
 // @import "_partial/categories";
 // @import "_partial/back-to-top";
-// @import "_partial/404";
 // @import "_partial/author_info";
 // @import "_partial/search";
 
